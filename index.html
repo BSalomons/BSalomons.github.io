@@ -6,231 +6,87 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Brett Salomons">
   <meta name="description" content="Office Checklist for Salomons Commercial">
+  <link rel="stylesheet" href="styles.css">
   <title>Salomons Commercial</title>
 </head>
-
 <body>
-  <p><img src="https://www.salomonscommercial.com/static/images/brand-salomons.png" alt="" width="400" height="72" />
-  </p>
+  <p><img src="https://www.salomonscommercial.com/static/images/brand-salomons.png" alt="" width="400" height="72"></p>
   <p><a href="https://www.salomonscommercial.com/" target="_blank">salomonscommercial.com</a></p>
-  <h1>Technical Specification</h1>
-  <h2>
-    <p>
-      <a href="index.html">Overview</a> |
-      <a href="pages/introduction.html">Introduction</a> |
-      <a href="pages/salesforce_summary.html">Salesforce Summary</a>
-    </p>
-  </h2>
+  <h1><a href="index.html">Salomons Commercial Checklist</a></h1>
+  
+  <hr>
+  <h3>Links to Pages</h3>
+  <hr>
 
-  <hr>
-  <h3>Introduction</h3>
-  <hr>
-  <p>The home page for the database (salomonscommercial.com/clientadmin which will now be referred to as the
-    &ldquo;<strong>Database</strong>&rdquo;) has a menu running along the left hand side with several headings (groups)
-    and then this same list of headings with each of their subgroups. You will only ever be dealing with the
-    &ldquo;Realty&quot; group for editing listing and property information.&nbsp;</p>
-  <h2>Objects</h2>
-  <p>Each of these subgroups are referred to as <strong>objects</strong> within the Database structure. Each object has
-    its own set of <strong>fields</strong> and <strong>records</strong>. You can think of each <u>object</u> as an Excel
-    spreadsheet, each <u>record</u> as a row in the spreadsheet, and each <u>field</u> as a column in the spreadsheet. For
-    example:</p>
-  <h3>Property</h3>
-  <table style="border-collapse:collapse;border:none;">
-    <tbody>
-      <tr>
-        <td
-          style="width: 35.2pt;border-top: 1pt solid black;border-bottom: 1pt solid black;border-left: 1pt solid black;border-image: initial;border-right: none;background: black;padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <strong><span style="color:white;">ID</span></strong></p>
-        </td>
-        <td
-          style="width: 99.25pt;border-top: 1pt solid black;border-left: none;border-bottom: 1pt solid black;border-right: none;background: black;padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <strong><span style="color:white;">Address</span></strong></p>
-        </td>
-        <td
-          style="width: 92.1pt;border-top: 1pt solid black;border-left: none;border-bottom: 1pt solid black;border-right: none;background: black;padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <strong><span style="color:white;">City</span></strong></p>
-        </td>
-        <td
-          style="width: 77.95pt;border-top: 1pt solid black;border-left: none;border-bottom: 1pt solid black;border-right: none;background: black;padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <strong><span style="color:white;">Zoning</span></strong></p>
-        </td>
-        <td
-          style="width: 68.65pt;border-top: 1pt solid black;border-left: none;border-bottom: 1pt solid black;border-right: none;background: black;padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <strong><span style="color:white;">Parcel Size (acres)</span></strong></p>
-        </td>
-        <td
-          style="width: 63.75pt;border-top: 1pt solid black;border-right: 1pt solid black;border-bottom: 1pt solid black;border-image: initial;border-left: none;background: black;padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <strong><span style="color:white;">Rentable Area (SF)</span></strong></p>
-        </td>
-      </tr>
-      <tr>
-        <td
-          style="width: 35.2pt;border-right: 1pt solid rgb(102, 102, 102);border-bottom: 1pt solid rgb(102, 102, 102);border-left: 1pt solid rgb(102, 102, 102);border-image: initial;border-top: none;background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <strong><span style="color:black;">1</span></strong></p>
-        </td>
-        <td
-          style="width: 99.25pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">4909 50 St</span></p>
-        </td>
-        <td
-          style="width: 92.1pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">Red Deer</span></p>
-        </td>
-        <td
-          style="width: 77.95pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">C1</span></p>
-        </td>
-        <td
-          style="width: 68.65pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">2</span></p>
-        </td>
-        <td
-          style="width: 63.75pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">21,000</span></p>
-        </td>
-      </tr>
-      <tr>
-        <td
-          style="width: 35.2pt;border-right: 1pt solid rgb(102, 102, 102);border-bottom: 1pt solid rgb(102, 102, 102);border-left: 1pt solid rgb(102, 102, 102);border-image: initial;border-top: none;padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <strong>2</strong></p>
-        </td>
-        <td
-          style="width: 99.25pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            4315 55 Ave</p>
-        </td>
-        <td
-          style="width: 92.1pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            Red Deer</p>
-        </td>
-        <td
-          style="width: 77.95pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            DC</p>
-        </td>
-        <td
-          style="width: 68.65pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            3</p>
-        </td>
-        <td
-          style="width: 63.75pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            10,000</p>
-        </td>
-      </tr>
-      <tr>
-        <td
-          style="width: 35.2pt;border-right: 1pt solid rgb(102, 102, 102);border-bottom: 1pt solid rgb(102, 102, 102);border-left: 1pt solid rgb(102, 102, 102);border-image: initial;border-top: none;background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <strong><span style="color:black;">3</span></strong></p>
-        </td>
-        <td
-          style="width: 99.25pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">412 Liberty Ave</span></p>
-        </td>
-        <td
-          style="width: 92.1pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">Red Deer County</span></p>
-        </td>
-        <td
-          style="width: 77.95pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">C2</span></p>
-        </td>
-        <td
-          style="width: 68.65pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">7</span></p>
-        </td>
-        <td
-          style="width: 63.75pt;border-top: none;border-left: none;border-bottom: 1pt solid rgb(102, 102, 102);border-right: 1pt solid rgb(102, 102, 102);background: rgb(204, 204, 204);padding: 0in 5.4pt;vertical-align: top;">
-          <p
-            style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:0in;line-height:normal;font-size:15px;font-family:"Calibri",sans-serif;'>
-            <span style="color:black;">120,000</span></p>
-        </td>
-      </tr>
-    </tbody>
-  </table>
-  <p>&nbsp;</p>
-  <p>In this example, the object is &ldquo;Property&rdquo;, the fields are the columns, and records are the rows.</p>
-  <p>Different objects can have relationships with each other. For example, a Property can be sold or leased therefore a
-    Listing is attached to that Property. In this case, the Property and Listing objects are independent of each other and
-    have what&rsquo;s called a &ldquo;many-to-many&rdquo; relationship; meaning one Property can have multiple Listings
-    (for sale or lease) or one Listing can have multiple Properties (industrial park) associated with it.&nbsp;</p>
-  <p>Other objects have a &ldquo;dependent relationship&rdquo; and are referred to as a
-    &ldquo;<strong>parent-child</strong>&rdquo; relationship. This means that the <strong>parent</strong> record needs to
-    exist prior to any associated <strong>child</strong> records. For example, Buildings are a child object to the
-    Property parent (you can&rsquo;t have a Building without a piece of land first). Likewise, Premises is a child of the
-    Building, and by extension a grandchild of the Property object. This relationship is referred to as a
-    &ldquo;one-to-many&rdquo; relationship as one Property can have multiple Buildings but a Building can only have one
-    Property associated with it (ditto with Premises).&nbsp;</p>
-  <p>Other objects within the Database are <strong>Zoning</strong>, <strong>Uses</strong>, and
-    <strong>Municipalities</strong>. For these, Zoning is a child of a Municipality. Rarely will you need to enter new
-    records for these objects as they have likely already been established.&nbsp;</p>
-  <h2>Forms</h2>
-  <p>When you are editing a record within the object, the page where you enter data is called a <strong>form</strong>. You
-    are populating the <u>fields</u> with data for a specific <u>record</u> within the <u>object</u>.</p>
-  <p>Each record has a <strong>unique key</strong> that the Database automatically generates upon creation. No two records
-    have the same unique key and you can&rsquo;t edit this field. This is how the Database differentiates and references
-    between records. When you attach a Listing to a Property record, the Database is assigning that unique key to the
-    other. When you break that relationship (say by assigning a different property to the listing) the Database is
-    reassigning the unique key.&nbsp;</p>
-  <p>The objects within Salesforce, and by extension the Database, have <strong>Record Types</strong> associated with
-    them. This allows the system to have different fields within the same object. For example, the <u>Property</u> object
-    has &ldquo;Industrial&rdquo;, &ldquo;Retail&rdquo;, &ldquo;Office&rdquo;, etc. record types since there are certain
-    fields that only apply to industrial. Same with <u>In Contract</u>: Sale or Lease.&nbsp;</p>
-  <h2>About This Checklist:</h2>
-  <p>Best practice is to save often to avoid a bug surfacing and negating all the data input. Bugs do occur from time to
-    time so if you are saving often you can usually troubleshoot which field caused the error and you won&rsquo;t have
-    wasted your time by losing the data that was put in.&nbsp;</p>
-  <p>For the remainder of this checklist, the following will be used to help differentiate:</p>
+  <h1>Introduction</h1>
+  <h1>Summaries</h1>
   <ul>
-    <li>Underlined words refer to an object either within the Database or Salesforce</li>
-    <li>Capitalized words refer to a field name</li>
-    <li>Quotations will refer to a field value, a record type, or an example</li>
-    <li>&ldquo;Brokerage&rdquo; refers to Salomons Commercial</li>
+    <li><a href="pages/salesforce_summary.html">Salesforce</a></li>
+    <li><a href="pages/properties_summary.html">Properties &amp; Listings</a></li>
+    <li><a href="pages/contacts_summary.html">Contacts &amp; Companies</a></li>
+    <li><a href="pages/pipeline_summary.html">Deal Pipeline</a></li>
+    <li><a href="pages/pm_summary.html">Property Management</a></li>
   </ul>
-
+  <h1>Properties</h1>
+  <ul>
+    <li><a href="pages/">Check if Property Exists in Database</a></li>
+    <li><a href="pages/">Create a new Property</a></li>
+    <li><a href="pages/">Add a Building</a></li>
+    <li><a href="pages/">Add a Premise</a></li>
+  </ul>
+  <h1>Listings</h1>
+  <ul>
+    <li><a href="pages/">Check if Listing Exists in Database</a></li>
+    <li><a href="pages/">Create a new Listing</a></li>
+    <li><a href="pages/">Add Listing to MLS</a></li>
+    <li><a href="pages/">Archive Listing</a></li>
+  </ul>
+  <h1>Add or Create Records for Other Objects</h1>
+  <ul>
+    <li><a href="pages/">Contacts</a></li>
+    <li><a href="pages/">Companies</a></li>
+    <li><a href="pages/">Zoning</a></li>
+    <li><a href="pages/">Municipalities</a></li>
+  </ul>
+  <h1>Deal Pipeline</h1>
+  <ul>
+    <li><a href="pages/">Tenant/Buyer Leads</a></li>
+    <li><a href="pages/">Open Offer</a>
+      <ul><a href="pages/"></a>
+        <li><a href="pages/">Sale</a></li>
+        <li><a href="pages/">Lease</a></li>
+      </ul>
+    </li>
+    <li><a href="pages/">Pending Deal</a>
+      <ul><a href="pages/"></a>
+        <li><a href="pages/">Sale</a></li>
+        <li><a href="pages/">Lease</a></li>
+      </ul>
+    </li>
+    <li><a href="pages/">In Contract</a>
+      <ul><a href="pages/"></a>
+        <li><a href="pages/">Sale</a></li>
+        <li><a href="pages/">Lease</a></li>
+      </ul>
+    </li>
+    <li><a href="pages/">Closed</a>
+      <ul><a href="pages/"></a>
+        <li><a href="pages/">Sale</a></li>
+        <li><a href="pages/">Lease</a></li>
+      </ul>
+    </li>
+  </ul>
+  <h1>Property Management</h1>
+  <ul>
+    <li><a href="pages/">Creating a new record</a></li>
+    <li><a href="pages/">PM Leases</a></li>
+  </ul>
+  <h1>Miscellaneous</h1>
+  <ul>
+    <li><a href="pages/">Naming Records and Files</a></li>
+    <li><a href="pages/">Cirrus Insight</a></li>
+  </ul>
+  <p><br></p>
 </body>
 
 </html>
