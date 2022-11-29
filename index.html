@@ -1,0 +1,59 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Brett Salomons">
+  <meta name="description" content="Office Checklist for Salomons Commercial">
+  <title>Salomons Commercial</title>
+</head>
+
+<body>
+  <p><img src="https://www.salomonscommercial.com/static/images/brand-salomons.png" alt="" width="400" height="72" />
+  </p>
+  <p><a href="https://www.salomonscommercial.com/" target="_blank">salomonscommercial.com</a></p>
+  <h1>Technical Specification</h1>
+  <h2>
+    <p>
+      <a href="index.html">Overview</a> |
+      <a href="pages/introduction.html">Introduction</a> |
+      <a href="pages/salesforce_summary.html">Salesforce Summary</a>
+    </p>
+  </h2>
+
+  <hr>
+  <h3>Overview</h3>
+  <hr>
+  <p>The purpose of this document is to outline the core functions of Salomons Commercial’s website and application
+    (“<strong>App</strong>”).</p>
+  <p>Salomons Commercial is a full service commercial real estate brokerage specializing in the Central Alberta region
+    only (the “<strong>Area</strong>”). Our brokerage works with both sellers/landlords and buyers/tenants. The primary
+    relationships we have are with our seller and landlord clients through our listing contracts to market and
+    sell/lease their commercial real estate.</p>
+  <p>The App serves two purposes:
+  <ol>
+    <li>the frontend website that the public visits, and</li>
+    <li>the backend database that both populates the frontend and stores transactional and property data on any
+      commercial property in the Area.</li>
+  </ol>
+  </p>
+  <p>Our current App is written in Python using the Django framework for the backend. The frontend is built on top using
+    the Wagtail framework. The backend has an API setup with our Salesforce account to use Salesforce as an external
+    database through a one-way push sync; any record input on the backend will overwrite any data in the fields that are
+    synced with Salesforce. The backend also utilizes GIS packages to integrate polygons overlaid on a satellite map
+    (currently Mapbox). These polygon GIS files were purchased from a government database (<a
+      href="https://www.altalis.com/" target="_blank">https://www.altalis.com/</a>) that comes from Alberta’s Land
+    Titles system.</p>
+  <p>The frontend’s primary purpose is to list and display the information on our Listings on the /property page and the
+    vast majority of our traffic goes through this page and the children pages (ie specific listings). Other supporting
+    purposes of the frontend is to describe what we do, who we are, what projects we have completed, a blog, and how to
+    contact us.</p>
+  <p>The UX needs to allow users to find and search properties that meet their criteria easily and quickly. Our current
+    frontend used AirBnB’s website as inspiration for the filters and display of records. This has the various filters
+    on the left hand side, the records listed inline in the middle, and the location of each property on an interactive
+    map on the right hand side. As filters are applied, the records and the map are updated accordingly.</p>
+
+</body>
+
+</html>
