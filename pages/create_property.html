@@ -41,5 +41,155 @@
   </h2>
 
   <hr>
-  <h3 class="page-intro">Introduction</h3>
+  <h3 class="page-intro">Create a New Property</h3>
   <hr>
+
+<p>A Property represents anything that has a certificate of title. Most of the time it is the piece of land but the one exception are condominiums. If it has a title, then there needs to be its own Property record. A Listing can only have one Property record associated with it.</p>
+
+<p>The Property is the highest parent record which can have further child records below it. What this means is that a child record can&rsquo;t exist unless the parent does. You can&rsquo;t have a building with out a piece of land to put it on. You also can&rsquo;t have a Premises within a building. Therefore, the Property is a parent of a Building record which is the parent to the Premises record (Property is the grandparent). You need to create the parent records first (and save it to the Database) before you can add and associate the child records with it.</p>
+
+<p>If you have checked and are sure the Property does not exist in the Database already, then follow these steps:</p>
+
+<ol class="checklist-1">
+  <li>Navigate to the Property page</li>
+  <li>Click either one of the Record Types at the top (Add Office, Add Industrial, &hellip;.) or click the green &ldquo;Add Property&rdquo; button. The difference between the two is the top categories will choose the record type chosen whereas the green button will just load the blank form and a record type will then need to be selected.</li>
+</ol>
+
+<p>Complete the fields within the form. The fields needing explaining are below, obvious ones are not included:</p>
+
+<ul class="checklist-1">
+  <li>Property Name
+    <ul class="checlist-2">
+      <li>Enter the Address for the Property</li>
+      <li>4909 50 Street</li>
+      <li><strong>Must follow this nomenclature</strong></li>
+    </ul>
+  </li>
+  <li>Record Type
+    <ul class="checklist-2">
+      <li>Choose the applicable Record Type</li>
+      <li>If multiple uses, choose the best or most applicable</li>
+      <li><strong>This field is used with the filters on the front end of the website </strong>so if this is not chosen
+        correctly then people won&rsquo;t see it. Think about how you would classify it if you were a user on the front
+        end</li>
+    </ul>
+  </li>
+</ul>
+
+<p>At this point, click the &ldquo;Save and Continue Editing&rdquo; button on the right-hand side before proceeding as the Record Type changes what the form looks like depending on selection.</p>
+
+<ul class="checklist-1">
+  <li>Secondary Use
+    <ul class="checklist-2">
+      <li>Use this picklist to choose other uses for the site</li>
+      <li>For example if Land was chosen for the Record Type, then choose what kind of Land</li>
+      <li>If the Property can be used for Office but is primarily Retail, then add Office</li>
+      <li><strong>Do not use this unless necessary. We don&rsquo;t want every property falling under every category. Just because office can go into a retail mall doesn&rsquo;t mean it should be included here. If you are on the front end and you select Office, that means you are looking for Office, not a Retail space. </strong></li>
+    </ul>
+  </li>
+  <li>Zone
+    <ul class="checklist-2">
+      <li>This should be zoning so select the correct zoning for the property by typing what it is.</li>
+      <li>There is the off chance it doesn&rsquo;t exist, if so <a href="../pages/add_zoning.html">click here</a> to add it to the Database</li>
+    </ul>
+  </li>
+  <li>Municipality
+    <ul class="checklist-2">
+      <li>Choose the appropriate Municipality</li>
+    </ul>
+  </li>
+</ul>
+
+<p>At this point, click the &ldquo;Save and Continue Editing&rdquo; button on the right-hand side before proceeding.</p>
+
+<ul class="checklist-1">
+  <li>LINC
+    <ul class="checklist-2">
+      <li>Add the LINC number that is found in the top left corner of the title</li>
+      <li>You must add the leading zeros and it must be 10 digits long</li>
+      <li>This is a unique number and no two properties can have the same LINC number at the Land Titles Office</li>
+      <li>The Existing Parcel checkbox is enabled by default. Do not uncheck this unless the property is proposed and hasn&rsquo;t been created yet. Ie needs to be subdivided</li>
+    </ul>
+  </li>
+  <li>Market and Submarket
+    <ul class="checklist-2">
+      <li>Old fields that aren&rsquo;t really used anymore. Feel free to skip</li>
+    </ul>
+  </li>
+  <li>Last Sale Date and Last Sale Price
+    <ul class="checklist-2">
+      <li>If known then please enter. This will show up on the title most times</li>
+    </ul>
+  </li>
+  <li>Description
+    <ul class="checklist-2">
+      <li>Anything unique about the property can be added here. Anything that is put here will show up in a keyword search</li>
+    </ul>
+  </li>
+  <li>Coordinates
+    <ul class="checklist-2">
+      <li>This is how the map on the front end places a pin for the property and must be completed</li>
+      <li>On the left hand side of the map there is a &ldquo;pin&rdquo; button, click it</li>
+      <li>Zoom in, pan and move the map to place the pin in the correct spot then click the mouse</li>
+    </ul>
+  </li>
+</ul>
+
+<p>At this point, click the &ldquo;Save and Continue Editing&rdquo; button on the right-hand side before proceeding.</p>
+
+<ul class="checklist-1">
+  <li>Images
+    <ul class="checklist-2">
+      <li>Drag and drop multiple images in the space to upload</li>
+      <li>This is what displays on the front end of the website</li>
+      <li>Generally you are trying to keep just pictures of the property here and leave pictures of a specific unit or Premises under that record</li>
+    </ul>
+  </li>
+  <li>Public Documents
+    <ul class="checklist-2">
+      <li>This is what is downloadable off the website</li>
+      <li>Do not put anything confidential here as the public will see it</li>
+    </ul>
+  </li>
+  <li>Private Documents
+    <ul class="checklist-2">
+      <li>This is for our own private use and anything can be uploaded</li>
+      <li>Rival brochures should be uploaded here to refer back to at later dates</li>
+      <li>Same with titles</li>
+    </ul>
+  </li>
+  <li>Land (Acres) or Land (SF)
+    <ul class="checklist-2">
+      <li>Entering either one of these fields will automatically update the other one upon saving</li>
+    </ul>
+  </li>
+  <li>Primary Contact
+    <ul class="checklist-2">
+      <li>Old field, ignore</li>
+    </ul>
+  </li>
+  <li>Parking Spaces
+    <ul class="checklist-2">
+      <li>This is the amount of parking for the entire site</li>
+    </ul>
+  </li>
+  <li>GIS Shapes
+    <ul class="checklist-2">
+      <li>This is at the very bottom of the page</li>
+      <li>This was functioning properly but since we&rsquo;ve done some changes to the code, it no longer works to edit or add new shapes</li>
+      <li>Leave whatever the default is here</li>
+    </ul>
+  </li>
+</ul>
+
+<p>At this point, click the &ldquo;Save and Continue Editing&rdquo; button on the right-hand side before proceeding.</p>
+
+<p>If just Land, then the Property is complete. If there are buildings on the site, then complete the Building form below. Even though it falls under the Property page, this technically is its own class of records; we have just embedded the form within the Property page to make it easier for data input (same with Premises).</p>
+
+<p><a href="../pages/add_building.html">Click here</a> on how to Add a Building</p>
+
+<p>The Building information <strong>must</strong> be completed. The fields under &ldquo;Site Information&rdquo; are calculated based on the values entered for the Buildings and the front end filters use these values. Therefore, if there are two buildings then the total Site Rentable Area is the sum of the two building&rsquo;s rentable areas (ditto with the other fields).</p>
+
+<p>The Building information <strong>must</strong> be completed first prior to completing any Premises information. This is because the Building record is parent to the Premises child record (a Premises can&rsquo;t exist without the Building).</p>
+
+<p><a href="../pages/add_premise.html">Click here</a> on how to Add a Premises</p>

@@ -41,5 +41,59 @@
     </h2>
 
   <hr>
-  <h3 class="page-intro">Introduction</h3>
+  <h3 class="page-intro">Add a Building</h3>
   <hr>
+
+  <p>You have the option of going to the Building object to create and populate the fields but the form for the Building is embedded within the Property object&rsquo;s form. This is the easiest way to add and edit these fields.</p>
+
+  <p>Navigate to the Property you want to add a Building and scroll down to the Building section to complete the fields.</p>
+
+  <ul class="checklist-1">
+    <li>Name
+      <ul class="checklist-2">
+        <li>A generic name is all that is needed here as most times there is only one Building on a Property.</li>
+        <li>If there are multiple buildings, pick some method of differentiating them</li>
+      </ul>
+    </li>
+    <li>Building Number
+      <ul class="checklist-2">
+        <li>This is an old field and isn&rsquo;t really needed</li>
+      </ul>
+    </li>
+    <li>Description
+      <ul class="checklist-2">
+        <li>Provide a basic description of the building</li>
+      </ul>
+    </li>
+    <li>Rentable Area
+      <ul class="checklist-2">
+        <li><strong>Must</strong> complete this field as this number is used to calculate the Property&rsquo;s total rentable area</li>
+        <li>This is the total rentable area for the entire Building, not just what is available</li>
+      </ul>
+    </li>
+    <li>Footprint Area
+      <ul class="checklist-2">
+        <li><strong>Must</strong> complete this field as the number is used to calculate the Property&rsquo;s total footprint area and then this number is used to calculate the site coverage ratio</li>
+      </ul>
+    </li>
+    <li>Gross Building Area
+      <ul class="checklist-2">
+        <li>Depending on how a building is measured (usually office buildings) then this number might differ from the Rentable Area. Most times they are the same number</li>
+      </ul>
+    </li>
+    <li>Units
+      <ul class="checklist-2">
+        <li>Old field that doesn&rsquo;t need to be completed</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p>At this point, click the &ldquo;Save and Continue Editing&rdquo; button on the right-hand side before proceeding.</p>
+
+  <p>Once the save button is hit, the Building record is created and the Database assigns a unique key to it. This number is then displayed in the heading and can be used to easily assign Premises to it.</p>
+
+  <p>There are additional fields within the Building object that are not displayed in the Property form. In the header for the Building, there is a &ldquo;edit&rdquo; button and if pressed it will go to that Building record&rsquo;s form. From here, you will then see the unique key for the associated Property record. The fields that exist here may be used
+    in future editions.</p>
+
+  <p>Once the Building record is created, a new form below for a second building is displayed. If it is blank then there is no record, it is just there to input for a second building if need be. There is also a button underneath that says &ldquo;Add another Building&rdquo; in case you wanted to add all the Buildings prior to hitting save. Best practice is
+    to save often.</p>

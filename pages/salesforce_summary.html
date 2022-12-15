@@ -42,5 +42,33 @@
   </h2>
 
   <hr>
-  <h3 class="page-intro">Introduction</h3>
+  <h3 class="page-intro">Salesforce Summary</h3>
   <hr>
+
+  <p>Salesforce is a platform used to track various aspects for the Brokerage. The primary functions of the Salesforce platform are:</p>
+
+  <ul>
+    <li>The Database synchronizes its <u>Properties</u> and <u>Listings</u> records with the Salesforce database. In this instance, Salesforce acts as an external database.</li>
+    <li>It is used as a contact database which synchronizes with our Google apps (Gmail, Contacts, Calendar) so that everyone is using the same contact list. This uses the <u>Contacts</u> object (child) and the <u>Companies</u> object (parent).</li>
+    <li>It tracks and keeps record of our Deal Pipeline. It starts with the <u>Tenant/Buyer Leads</u> object, then transitions into the <u>In Contract</u> object, then finishes with the <u>Closed Deals</u></li>
+    <li><u>Property Management</u> details are entered and tracked</li>
+  </ul>
+
+  <p>All of these objects interact with each other and can be searched and referenced accordingly. For example, one single <u>Contact</u> can be all of the following:</p>
+  <ul>
+    <li>a client for a <u>Listing</u></li>
+    <li>an owner of a <u>Property</u></li>
+    <li>a potential buyer</li>
+    <li>a tenant in an <u>In Contract</u> deal</li>
+    <li>the seller in a <u>Closed Deal</u></li>
+    <li>the owner of a <u>Property Management</u></li>
+  </ul>
+
+  <p>When going to this <u>Contact</u> record, it will show all of the other objects that they are associated with. This is what makes it a relational database.</p>
+
+  <p>For the <u>Properties</u> and <u>Listings</u> object only, it is a <strong>one-way sync</strong> between the Database and Salesforce, meaning that if you edit a record in Salesforce, <strong>it will not sync with the Database and that data will be lost if the same record in the Database is saved</strong>. This is because the data entered in the
+    Database overwrites anything saved in Salesforce.</p>
+
+  <p>For the above reasons, <strong>it is very important to accurately add and update the data contained within Salesforce frequently.</strong> Everyone works off the same data and this information is used to send out mail, deposits, cheques, etc.</p>
+
+  <p>Within each individual record of Salesforce, there is the details associated with the record and then &ldquo;Related Lists&rdquo;.&nbsp; Related Lists are the relationships shown with other objects and this particular record. Typically, they are displayed at the bottom of the page except for <u>Properties</u> in which they are their own tab near the top. For example, navigating to a Contact would show which <u>Properties</u> they own, which <u>Listings</u> we have with them, and which <u>Closed Deals</u> they have been involved in.</p>

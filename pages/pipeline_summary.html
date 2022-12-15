@@ -42,5 +42,17 @@
   </h2>
 
   <hr>
-  <h3 class="page-intro">Introduction</h3>
+  <h3 class="page-intro">Deal Pipeline Summary</h3>
   <hr>
+
+  <p>There are three objects associated with the deal pipeline within Salesforce: 1) <u>Tenant/Buyer Leads</u>, 2) <u>In Contract</u>, and 3) <u>Closed Deals</u>. There are buttons within Salesforce that advance a transaction to the next object. What these buttons more or less do is copies the data within one object, creates a new record in the next object, pastes that data into the newly created record, and updates the record in the original object accordingly.</p>
+
+  <p>For example, hitting &ldquo;Close Deal&rdquo; within the <u>In Contract</u> object will create a new <u>Closed Deal</u> record, put all the transaction data into this new record, and then update the <u>In Contract</u> to be &ldquo;sold&rdquo; or &ldquo;leased&rdquo;. Our various filters, forms and reports work off the values of these fields.</p>
+
+  <p><strong>The <u>In Contract</u> object is the most important as the data in this object is used for accounting and auditing purposes with the brokerage. It is imperative that the data entered into this object is both accurate and up to date.</strong></p>
+
+  <p><u>In Contract</u> has various sub levels within it that are regulated with the &ldquo;Status&rdquo; field. The first is &ldquo;Negotiating&rdquo; which means offers have been presented but have not been accepted yet. This is the first step of our process which assigns a deal number to a file. The second is &ldquo;Pending&rdquo; which means an offer has been accepted by two parties and are now working through conditions precedent. The third is &ldquo;In Contract&rdquo; which is the interim period when all conditions precedent have been waived or satisfied and the transaction is proceeding to close. The fourth is &ldquo;Closed&rdquo; and is accomplished by simply hitting the &ldquo;Close Deal&rdquo; button within the record. Only the broker handles this process. The fifth option is &ldquo;Dead&rdquo; which means the transaction has collapsed at some point during one of the above states.</p>
+
+  <p><u>Tenant/Buyer Leads</u> is an object for agents to keep track of any leads that are searching for properties and provides them a space to enter important information. It also allows you to put them in a &ldquo;hold&rdquo; status which means nothing works for them in the market right now but you want to keep them in mind should something come available in the future.</p>
+
+  <p><u>Closed Deals</u> is an object for tracking comps so that you can filter and see what properties have sold and leased for. There is the ability to track external transactions that are brokerage was not involved in. &nbsp;</p>

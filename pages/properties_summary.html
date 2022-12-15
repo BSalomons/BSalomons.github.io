@@ -42,5 +42,15 @@
   </h2>
 
   <hr>
-  <h3 class="page-intro">Introduction</h3>
+  <h3 class="page-intro">Properites & Listings Summary</h3>
   <hr>
+
+  <p>There are two primary &ldquo;buckets&rdquo; of data as it relates to real estate transactions. They are related to each other but it is important to visualize them separately to ensure the proper data is being entered.</p>
+
+  <p>The first is <u>Properties.</u> The data associated with this object is the physical characteristics of the property; it is the attributes that don&rsquo;t change without great expense. For example, it is the acreage of the lot; the square footage of a building; the building height; the zoning; its address; pictures and so on. Unless a redevelopment, subdivision, or renovation occurs, these attributes won&rsquo;t change and once it is entered it doesn&rsquo;t need to be entered again.</p>
+
+  <p>The second is <u>Listings</u>. The data associated with this object is the transactional information associated with the sale or lease of a <u>Property</u>. For example, it is the purchase price; the lease rate; the MLS number; the signage on the property; the status of the listing; the features and so on. It is a transaction that is occurring at a point in time and can occur again at any point in the future for the same Property.</p>
+
+  <p>A <u>Property</u> is the parent of a <u>Listing</u> as you can&rsquo;t have a <u>Listing</u> without the underlying <u>Property</u> to lease or sell. Most of the fields that are displayed on the front end of the website are <u>Listing</u> fields.</p>
+
+  <p>Adding and editing <u>Properties</u> and <u>Listings</u> must be done in the Database and not in Salesforce. This is because it is a one-way sync wherein the Database updates Salesforce but not the other way. Therefore data entered into Salesforce will be overwritten once the record is updated in the Database.</p>
