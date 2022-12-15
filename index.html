@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,25 +8,26 @@
   <meta name="author" content="Brett Salomons">
   <meta name="description" content="Office Checklist for Salomons Commercial">
   <link rel="stylesheet" href="styles.css">
-  <title>Salomons Commercial</title>
+  <script src="javascript.js"></script>
+  <title>Salomons Commercial Checklist</title>
 </head>
 <body>
   <p><img src="https://www.salomonscommercial.com/static/images/brand-salomons.png" alt="" width="400" height="72"></p>
   <p><a href="https://www.salomonscommercial.com/" target="_blank">salomonscommercial.com</a></p>
-  <h1><a href="index.html">Salomons Commercial Checklist</a></h1>
+  <h1 id="title">Salomons Commercial Checklist</h1>
   
   <hr>
-  <h3>Links to Pages</h3>
+  <h3 class="page-intro">Links to Pages</h3>
   <hr>
 
   <p>The links below will send you to the appropriate page explaining the task at hand.</p>
 
-  <h1>Introduction</h1>
+  <h1 class="anchor-titles">Introduction</h1>
   <p>An introduction that explains the terminology along with how the database and Salesforce are structured.</p>
   <ul>
     <li><a href="pages/introduction.html">Introduction</a></li>
   </ul>
-  <h1>Summaries</h1>
+  <h1 class="anchor-titles">Summaries</h1>
   <p>A series of summaries that explain the various functions in the database and Salesforce.</p>
   <ul>
     <li><a href="pages/salesforce_summary.html">Salesforce</a></li>
@@ -34,7 +36,7 @@
     <li><a href="pages/pipeline_summary.html">Deal Pipeline</a></li>
     <li><a href="pages/pm_summary.html">Property Management</a></li>
   </ul>
-  <h1>Properties</h1>
+  <h1 class="anchor-titles">Properties</h1>
   <p>How to create a new Property and an explanation of the various fields.</p>
   <ul>
     <li><a href="pages/check_exist.html">Check if Property Exists in Database</a></li>
@@ -42,7 +44,7 @@
     <li><a href="pages/add_building.html">Add a Building</a></li>
     <li><a href="pages/add_premise.html">Add a Premise</a></li>
   </ul>
-  <h1>Listings</h1>
+  <h1 class="anchor-titles">Listings</h1>
   <p>How to create a new Listing and an explanation of the various fields.</p>
   <ul>
     <li><a href="pages/check_exist.html">Check if Listing Exists in Database</a></li>
@@ -50,7 +52,7 @@
     <li><a href="pages/add_MLS.html">Add Listing to MLS</a></li>
     <li><a href="pages/archive_listing.html">Archive Listing</a></li>
   </ul>
-  <h1>Add or Create Records for Other Objects</h1>
+  <h1 class="anchor-titles">Add or Create Records for Other Objects</h1>
   <p>How to create records in other objects within Salesforce.</p>
   <ul>
     <li><a href="pages/add_contact.html">Contacts</a></li>
@@ -58,42 +60,22 @@
     <li><a href="pages/add_zoning.html">Zoning</a></li>
     <li><a href="pages/add_municipality.html">Municipalities</a></li>
   </ul>
-  <h1>Deal Pipeline</h1>
+  <h1 class="anchor-titles">Deal Pipeline</h1>
   <p>The Deal Pipeline explained in Salesforce and how to move a record along the lifecycle.</p>
   <ul>
     <li><a href="pages/buyer_leads.html">Tenant/Buyer Leads</a></li>
-    <li><a href="pages/new_offer.html">Open Offer</a>
-      <ul>
-        <li><a href="pages/open_sale.html">Sale</a></li>
-        <li><a href="pages/open_lease.html">Lease</a></li>
-      </ul>
-    </li>
-    <li><a href="pages/pending.html">Pending Deal</a>
-      <ul>
-        <li><a href="pages/pending_lease.html">Sale</a></li>
-        <li><a href="pages/pending_sale.html">Lease</a></li>
-      </ul>
-    </li>
-    <li><a href="pages/in_contract.html">In Contract</a>
-      <ul>
-        <li><a href="pages/firm_sale.html">Sale</a></li>
-        <li><a href="pages/firm_lease.html">Lease</a></li>
-      </ul>
-    </li>
-    <li><a href="pages/closed.html">Closed</a>
-      <ul>
-        <li><a href="pages/closed_sale.html">Sale</a></li>
-        <li><a href="pages/closed_lease.html">Lease</a></li>
-      </ul>
-    </li>
+    <li><a href="pages/open_sale.html">Open Offer</a></li>
+    <li><a href="pages/pending_sale.html">Pending Deal</a></li>
+    <li><a href="pages/firm_sale.html">In Contract</a></li>
+    <li><a href="pages/closed.html">Closed</a></li>
   </ul>
-  <h1>Property Management</h1>
+  <h1 class="anchor-titles">Property Management</h1>
   <p>The Property Management object explained in Salesforce.</p>
   <ul>
     <li><a href="pages/new_pm.html">Creating a new record</a></li>
     <li><a href="pages/new_lease.html">PM Leases</a></li>
   </ul>
-  <h1>Miscellaneous</h1>
+  <h1 class="anchor-titles">Miscellaneous</h1>
   <p>How to name files and various other protocols.</p>
   <ul>
     <li><a href="pages/naming.html">Naming Records and Files</a></li>
