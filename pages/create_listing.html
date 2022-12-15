@@ -41,5 +41,289 @@
   </h2>
 
   <hr>
-  <h3 class="page-intro">Introduction</h3>
+  <h3 class="page-intro">Create a New Listing</h3>
   <hr>
+
+  <h3 class="para-sub">Prerequisites:</h3>
+  <ol class="checklist-1">
+    <li>Has the client with the <u>Listing</u> been entered into the Salesforce? No: <a href="../pages/add_contact.html">click here</a></li>
+    <li>Does the underlying <u>Property</u> exist in the Database? How to check. No: <a href="../pages/check_exist_property.html">click here</a></li>
+    <li>Is the underlying <u>Property</u> information correct and current? No: <a href="../pages/create_property.html">click here</a></li>
+    <li>If a Lease listing, is the <u>Premises</u> information correct and current? No: <a href="../pages/add_premise.html">click here</a></li>
+  </ol>
+
+  <h3 class="para-sub">New Record:</h3>
+  <p>Two ways to create a new listing:</p>
+
+  <ol class="checklist-1">
+    <li>Within the underlying <u>Property</u> page, on the right hand side, click &ldquo;Create Listing&rdquo;</li>
+    <li>Choose the <u>Listing</u> option on the left hand side and click green button &ldquo;Add Listing&rdquo;</li>
+  </ol>
+
+  <p>Complete the fields in the <u>Listing</u> page form:</p>
+
+<label class="container">Listing Name
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+      <ul class="checklist-2">
+        <li>Common Name of the Property Owner followed by a dash and the address of the underlying Property name</li>
+        <li>Ex: &ldquo;Parkland Properties Ltd &ndash; 4919 59 Street&rdquo;</li>
+        <li><strong>Must follow this nomenclature</strong></li>
+      </ul>
+  <label class="container">Listing Name Display
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+      <ul class="checklist-2">
+        <li>This is what is displayed on the front end of the website <strong>AND</strong> will form part of the URL</li>
+        <li>Editing and changing this field will result in a new URL on the front end and any previous shared links (from mailouts, brochures, etc.) will be broken</li>
+      </ul>
+    <label class="container">Record Type
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Sale Listing: choose &ldquo;Seller Representation&rdquo;</li>
+        <li>Lease Listing: choose &ldquo;Landlord Representation&rdquo;</li>
+      </ul>
+
+  <p>At this point, click the &ldquo;Save and Continue Editing&rdquo; button on the right-hand side before proceeding</p>
+
+<label class="container">Active
+  <input type="checkbox">
+  <span class="checkmark"></span>
+</label>
+      <ul class="checklist-2">
+        <li>If checked, this will be displayed on the website</li>
+      </ul>
+    <label class="container">Is Active Expiry
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>If populated with a date, the Active checkbox will be deselected if the date is in the past</li>
+        <li>Leave blank otherwise</li>
+      </ul>
+    <label class="container">Featured
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>If checked, this will show on the featured list on the home page</li>
+      </ul>
+    <label class="container">Featured Expiry
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>If populated with a date, the Featured checkbox will be deselected if the date is in the past</li>
+        <li>Leave blank otherwise</li>
+      </ul>
+    <label class="container">Status
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Choose the appropriate selection from the picklist</li>
+      </ul>
+    <label class="container">Status Expiry
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>If populated with a date, the Status field will default back to &ldquo;Available&rdquo; if the date is in the past</li>
+        <li>Leave blank otherwise</li>
+      </ul>
+    <label class="container">Asking Price
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>If a Sale listing, enter the sale price. If the price is to be undisclosed, then put the expected price. This does not display on the website but this field is used with the filters</li>
+        <li>Do not use commas, only enter numbers</li>
+        <li>If a Lease listing, leave blank</li>
+        <li><strong>This field is used with the filters on the front end of the website</strong></li>
+      </ul>
+  <label class="container">Asking Price Display
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+      <ul class="checklist-2">
+        <li>This is what will be displayed on the website</li>
+        <li>Whatever is written here will show exactly on the front end. Therefore you need to enter &lsquo;$&rsquo; and any other information to ensure it is formatted correctly</li>
+      </ul>
+    <label class="container">Site Area
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Enter the size of the parcel here</li>
+        <li>Only enter numbers, not commas or other characters</li>
+      </ul>
+    <label class="container">Min Square Footage
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Lease Listing Only</li>
+        <li>This is the minimum area that a tenant can take</li>
+        <li><strong>This field is used with the filters on the front end of the website</strong></li>
+      </ul>
+    <label class="container">Max Contiguous Area
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Lease Listing Only</li>
+        <li>This is the maximum area that a tenant can take that isn&rsquo;t broken up</li>
+        <li>If there are two spaces side by side, this field would be the sum of the two</li>
+        <li>If the spaces are not side by side, this field would be the larger of the two</li>
+        <li><strong>This field is used with the filters on the front end of the website</strong></li>
+      </ul>
+    <label class="container">Min Acreage
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Sale listing for Land only</li>
+        <li><strong>This field is used with the filters on the front end of the website</strong></li>
+      </ul>
+    <label class="container">Max Acreage
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Sale listing for Land only</li>
+        <li><strong>This field is used with the filters on the front end of the website</strong></li>
+      </ul>
+    <label class="container">MLS
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Check this box is the listing is going on MLS/Spacelist</li>
+      </ul>
+    <label class="container">MLS Number
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Enter the MLS number (if applicable)</li>
+      </ul>
+    <label class="container">Conditional Offer Status
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Choose Active if the client wishes to continue to market the property as &ldquo;available&rdquo; if a pending deal is in place</li>
+        <li>Choose Conditional if the client wishes to market the property as &ldquo;pending&rdquo; if a pending deal is in place</li>
+        <li>Refer to the Listing agreement to determine what to choose</li>
+      </ul>
+    <label class="container">Winter
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Check this box if the pictures being used have snow</li>
+      </ul>
+
+  <p>At this point, click the &ldquo;Save and Continue Editing&rdquo; button on the right-hand side before proceeding</p>
+
+  <label class="container">Description
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+      <ul class="checklist-2">
+        <li>Long description of the property and the features surrounding it</li>
+        <li>These are the main selling points and unique attributes associated with the property</li>
+        <li>Can use photos (with internet link); links to other websites, various headings, etc.</li>
+      </ul>
+    <label class="container">Brochure
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Upload the most recent brochure</li>
+      </ul>
+  <label class="container">Property
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+      <ul class="checklist-2">
+        <li>Choose the underlying Property record to associate with this Listing</li>
+        <li>The number displayed is what is called the &ldquo;unique key&rdquo;. It&rsquo;s an auto generated number the Database makes and assigns to the record. It&rsquo;s how the Database knows to refer to that specific property record</li>
+        <li>Click the magnifying glass to open a window to look up the applicable Property</li>
+      </ul>
+  <label class="container">Premises
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>      <ul class="checklist-2">
+        <li>If a Sale Listing, leave this blank</li>
+        <li>These are all the Premises or spaces associated with a Lease Listing</li>
+        <li>As with the Property, the numbers here are the unique keys associated with each Premises. No two Premises will have the same number</li>
+        <li>The Premises unique keys can be seen directly by going to the underlying Property and scrolling down to the applicable Premises. Screenshot below.</li>
+      </ul>
+
+  <p>At this point, click the &ldquo;Save and Continue Editing&rdquo; button on the right-hand side before proceeding</p>
+
+  <label class="container">Rep Agreement Executed
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+      <ul class="checklist-2">
+        <li>Enter the date that the listing agreement was signed</li>
+      </ul>
+    <label class="container">Date on Market
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>His the &ldquo;today&rdquo; button</li>
+      </ul>
+    <label class="container">Original Expiry Date
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Enter the expiry date that is written in the listing agreement</li>
+      </ul>
+    <label class="container">Automatic Renewal
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>If there is an automatic renewal clause in the listing agreement, check this box</li>
+      </ul>
+    <label class="container">Renewal Term Length
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Enter the number of months contained in the automatic renewal clause. If month-to-month, enter 1</li>
+      </ul>
+    <label class="container">Listing Features
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Add the various features associated with the property</li>
+      </ul>
+    <label class="container">Listing Videos
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Upload the video to the youtube account</li>
+        <li>Use the share button in youtube to copy the url and paste it in the applicable field</li>
+      </ul>
+    <label class="container">Listing Contacts
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+      <ul class="checklist-2">
+        <li>Choose the applicable agent</li>
+        <li>Add a second agent if applicable</li>
+      </ul>
+
+  <p>Review all data. If good hit the &ldquo;Save&rdquo; button.</p>
