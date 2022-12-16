@@ -4,8 +4,12 @@
   font-family: Barlow;
 }
 
-p {
+p li {
+  font-size: medium;
+}
 
+a {
+  color: #002F67;
 }
 
 #title {
@@ -81,12 +85,12 @@ p {
   left: 0;
   height: 25px;
   width: 25px;
-  background-color: #eee;
+  background-color: #ccc;
 }
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #bbb;
 }
 
 /* When the checkbox is checked, add a blue background */
