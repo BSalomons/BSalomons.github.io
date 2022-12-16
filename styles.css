@@ -4,56 +4,62 @@
   font-family: Barlow;
 }
 
-p li {
+p , ul , ol {
   font-size: large;
+}
+
+ul li , ol li {
+  padding: 5px;
 }
 
 a {
   color: #002F67;
 }
 
-#title {
-
-}
-
-.page-intro {
-
+a:hover {
+  color: #E28F26;
 }
 
 .anchor-titles {
-
+  font-size: 24px;
 }
 
 .title-links {
-
+  font-size: 26px;
 }
 
 .sub-titles {
-
+  font-size: 20px;
+  background-color: #ccc;
+  outline: auto;
+  padding: 8px
 }
 
-.para-head {
-
+.page-intro {
+  font-size: 20px;
 }
 
-.para-sub {
-
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-.header {
-
+th {
+  background-color: #002F67;
+  color: white;
 }
 
-.row {
-
+th, td {
+  padding: 15px;
+  text-align: left;
 }
 
-.checklist-1 {
-
+tr:nth-child(odd) {
+  background-color: #bbb
 }
 
-.checklist-2 {
-
+.save {
+  color: red;
 }
 
 .container {
