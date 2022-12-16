@@ -39,3 +39,72 @@
   <hr>
   <h3 class="page-intro">Introduction</h3>
   <hr>
+
+  <p>While not required, it is best practice to create a <u>Company</u> before you add a <u>Contact</u> to that <u>Company</u>. This is because a <u>Company</u> is a parent record to a <u>Contact</u> and therefore some of the information from the <u>Company</u> will be inherited by the <u>Contact</u> record. If the reverse order is done, then this doesn&rsquo;t happen.</p>
+
+  <p>To have the address of the Company along with general phone number be auto-populated into the Contact&rsquo;s information, start on the applicable company and then scroll down to Contacts associated with that company. Hit the &ldquo;New&rdquo; button and then follow the steps. Otherwise, choose a new Contact within the object.</p>
+  
+  <ol>
+    <li>First step is to choose the appropriate Record Type. Most often you will be choosing from the top three options below. It is best practice to choose appropriately as you can filter contacts based on their roles. For example we could choose to send something to just the brokers.
+      <ol>
+        <li>Principal &ndash; owners of real estate</li>
+        <li>Tenant &ndash; tenant&rsquo;s of real estate</li>
+        <li>Broker &ndash; real estate brokers</li>
+        <li>Manager &ndash; someone who manages real estate on behalf of a company</li>
+        <li>Attorney &ndash; lawyer</li>
+        <li>Lender &ndash; finances real estate</li>
+      </ol>
+    </li>
+    <li>Complete the Contact form</li>
+  </ol>
+
+  <p>The first action item on the form is to complete the Principal Type and Tenant Type fields. These two fields are used to filter out contacts to send future listings so <strong>choose these options only if you want to send this individual future listings</strong>. Choose &ldquo;Not Applicable&rdquo; if you do not want future listings sent to this individual. These are required fields and because of that, Salesforce displays it on each Record Type even though Principals are not Tenants and vice versa.</p>
+
+  <p>For example, under Tenant Type, I typically only add national tenants under this category like Tim Hortons or Starbucks. When a new proposed development is being marketed then you can filter the retail contacts to send a mass email to.</p>
+
+  <p>A number of these fields are synced with Google and thus our contact lists. Adding a Contact will add it to your phone. The following fields sync with Google:</p>
+
+  <ul>
+    <li>First Name</li>
+    <li>Last Name</li>
+    <li>Company Name</li>
+    <li>Title</li>
+    <li>Phone</li>
+    <li>Direct Line</li>
+    <li>Mobile</li>
+    <li>Email</li>
+    <li>Address</li>
+  </ul>
+
+  <p>A description of the non-obvious fields:</p>
+  
+  <ul>
+    <li>Principal Type
+      <ul>
+        <li>A sub category for owners of real estate. Add as many categories as the person would like to be contacted
+          about</li>
+      </ul>
+    </li>
+    <li>Tenant Type
+      <ul>
+        <li>A sub category if they are office, retail or industrial</li>
+      </ul>
+    </li>
+    <li>Email Opt Out, Listing Client, and Mgmt Tenant
+      <ul>
+        <li>Don&rsquo;t worry about these checkboxes. Salesforce automatically checks and unchecks them based on other
+          objects</li>
+      </ul>
+    </li>
+    <li>Direct Line
+      <ul>
+        <li>If applicable, write in people&rsquo;s extensions here. For example: ext 1234</li>
+      </ul>
+    </li>
+    <li>Update Address Phone
+      <ul>
+        <li>If you select this checkbox, upon saving it will inherit the Phone number and Address from the Company the
+          Contact is associated with. It will overwrite any existing data.</li>
+      </ul>
+    </li>
+  </ul>
