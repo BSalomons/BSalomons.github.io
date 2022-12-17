@@ -24,7 +24,7 @@
       <a href="../pages/create_property.html">Properties</a>  |
       <a href="../pages/create_listing.html">Listings</a>  |
       <a href="../pages/add_contact.html">Add or Create</a>  |
-      <a href="../pages/buyer_leads.html">Deal Pipeline</a>  |
+      <a href="../pages/open_sale.html">Deal Pipeline</a>  |
       <a href="../pages/new_pm.html">Property Management</a>  |
       <a href="../pages/naming.html">Miscellaneous</a>
     </h2>
@@ -38,5 +38,397 @@
     </h2>
 
   <hr>
-  <h3 class="page-intro">Introduction</h3>
+  <h3 class="page-intro">Pending - Conditional Offer for Sale or Lease</h3>
   <hr>
+
+<p>Once an Open Offer goes conditional, the following steps <strong>must</strong> be followed immediately.</p>
+
+<h2 class="anchor-title">Sale</h2>
+
+<h3>Prerequisites:</h3>
+
+<ol>
+  <li>The data associated with the subject Property, including Buildings, has been updated and is current. No: <a href="../pages/create_property.html">click here</a></li>
+  <li>The applicable parties have been entered into Salesforce, namely:
+    <ul>
+      <li>The <u>Companies,</u> as listed in the Offer to Purchase, have been entered into Salesforce, if applicable (ie the buyer or seller may have the contract in their personal name). No: <a href="../pages/add_company.html">click here.</a></li>
+      <li>The people <u>Contacts</u> associated with the seller and the buyer, if known but at minimum the client we are representing, have been entered into Salesforce and are associated with the parent <u>Company</u>. No: <a href="../pages/add_contact.html">click here.</a></li>
+      <li>The applicable broker <u>Contacts</u> have been entered into Salesforce. No: <a href="../pages/add_contact.html">click here.</a></li>
+      <li>The applicable lawyer <u>Contacts</u> have been entered into Salesforce. No: <a href="../pages/add_contact.html">click here.</a></li>
+    </ul>
+  </li>
+</ol>
+
+<h3>Updating an Open Offer to Pending:</h3>
+
+<p>Now that the Open offer has become &ldquo;Pending&rdquo;, the <u>In Contract</u> record <strong>must</strong> be updated with the applicable deal terms. The following fields <strong>must</strong> be completed and/or updated <strong>by the agent</strong> once a pending deal occurs:</p>
+
+<label class="container">Status
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Change the Status from &ldquo;Negotiating&rdquo; to &ldquo;Pending&rdquo;</li>
+</ul>
+
+<label class="container">Project Name
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>For Project Name, you <strong>must</strong> follow the <a href="../pages/naming.html">naming guidelines</a></li>
+</ul>
+
+<label class="container">Listing
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>If this is our <u>Listing</u>, then the applicable <u>Listing</u> must be associated with this record</li>
+  <li>You may add an &ldquo;External Listing&rdquo; record as another brokerage&rsquo;s listing. This will be something we track in the future.</li>
+</ul>
+
+<label class="container">Property
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Ensure the correct <u>Property</u> has been associated with the sales transaction</li>
+  <li>If there is more than one Property associated with the sales transaction, create a Property with a Portfolio record type. No: <a href="../pages/create_property.html">click here.</a></li>
+</ul>
+
+<label class="container">Contract Price
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Enter in the total sum of the purchase.</li>
+  <li>If unknown (because the land may still need to be subdivided), use your best guess</li>
+</ul>
+
+<label class="container">Execution Date
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Input the date that the agreement was fully executed by the seller and buyer</li>
+</ul>
+
+<label class="container">Closing Date
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Input the date that the proposed transaction will close</li>
+  <li>If unknown, use your best estimate or worst-case scenario</li>
+</ul>
+
+<label class="container">Project Contacts
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Input the applicable parties in the transaction, if known, as per the Prerequisites</li>
+</ul>
+
+<label class="container">Commission Amount
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Enter in the dollar amount of the Commission being earned on this transaction</li>
+</ul>
+
+<p class="save">At this point, click the &ldquo;Save&rdquo; button that will be hovering at the bottom of the page before proceeding.</p>
+
+<p>The remainder of the record should be completed by the agent to ensure its accuracy. The following explains the various &ldquo;Related Lists&rdquo; associated with the <u>In Contract</u> record.</p>
+
+<h3>Deposits</h3>
+
+<p>If the Brokerage is holding deposit monies, the <u>Deposit</u> information <strong>must</strong> be completed</p>
+
+<label class="container">Click the &ldquo;New&rdquo; button and complete the following:
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+<label class="container">There are two groupings: "Ledger Information" and "Further Details"
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+<label class="container">Ledger Information. This is primarily used for our Trust and General accounts.
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Type: Choose either debit, credit or external. Debit means money is going into our account, credit means it is leaving our account, external means it is not our account.</li>
+  <li>Account: If Type is not external, choose either Trust or General that the debit or credit is going into</li>
+  <li>Amount: I don't need to explain this</li>
+  <li>Entity: This is the person or company that is supplying the money</li>
+  <li>Form of Payment: Choose the appropriate method for payment</li>
+</ul>
+
+<label class="container">Further Details. These fields are for further information about the payment and is used for deposit information going into other brokerages or lawyers trust accounts.
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Deposit Holder: specify who is holding the deposit</li>
+  <li>Due Date: Put the date that the deposit is due. This can be populated at a later date. <strong>This field is used for email alerts</strong> if you want to be notified that a deposit has not been received yet.</li>
+  <li>Date Received/Sent: Choose the date that the amount was sent or received. <strong>This is tied to email alerts</strong> if you want to be notified about when a deposit is received.</li>
+  <li>Clause Number, Cheque Number and Interest Bearing are self explanatory</li>
+</ul>
+
+<h3>Conditions</h3>
+
+<label class="container">These are for the benefit of the <strong>agent</strong>. You will be notified when an upcoming condition is due therefore it is important to enter each condition to stay on top of them.
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+<label class="container">Click the &ldquo;New&rdquo; button and complete the following:
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Milestone Name: this is to describe the applicable condition</li>
+  <li>Clause Number: the clause number to refer to in the Offer to Purchase</li>
+  <li>Kickoff: The date the condition commences. If unknown, use best estimate or leave blank, until known</li>
+  <li>Deadline: The date the condition must be waived or satisfied. If unknown, use best estimate or leave blank, until known</li>
+  <li>Date Removed: Leave Blank</li>
+  <li>Complete Checkbox: Leave unchecked</li>
+  <li>Hit &ldquo;Save&rdquo; or &ldquo;Save &amp; New&rdquo; to add other conditions</li>
+</ul>
+
+<h3>Deal Team</h3>
+
+<label class="container">This allocates the Commission amount specified in the record between the parties listed within this Related List
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+<label class="container">Click the &ldquo;Edit Commissions&rdquo; and complete the following:
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+<ul>
+  <li>Whoever created the record will default to be 100% recipient of the Commission</li>
+  <li>If the other broker involved is from the Brokerage, click &ldquo;Add Internal Agent&rdquo;, or if the broker involved is from a different brokerage, click &ldquo;Add External Agent&rdquo;</li>
+  <li>In the agent lookup field, start typing the name and click the magnifying glass is the name doesn&rsquo;t pop up </li>
+  <li>Choose the applicable roles of the agents</li>
+  <li>Allocate the commission. This can be done by dollar value or percent of commission (Ie 50/50)</li>
+</ul>
+
+<label class="container">Repeat the above steps for each additional agent involved, including referrals
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+<label class="container">The information here is used to calculate agents output in <u>Closed Deals</u>
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <h2 class="anchor-title">Lease</h2>
+
+  <h3>Prerequisites:</h3>
+
+  <ol>
+    <li>The data associated with the subject Property, including Buildings and Premises have been updated and is current. No: click here</li>
+    <li>In addition to the Property and Listing records associated with this Lease, the Space, or Premises, must be added or updated with the current deal terms.</li>
+  </ol>
+  <ul>
+    <li>You must look up the Premises Name associated with the applicable Premises. Salesforce automatically assigns this name and the only way to look up the number to enter it into the In Contract record is by typing the associated Premises name (a series of numbers).</li>
+  </ul>
+  <ol start="3">
+    <li>The applicable parties have been entered into Salesforce, namely:</li>
+  </ol>
+  <ul>
+    <li>The <u>Companies,</u> as listed in the Offer to Lease, have been entered into Salesforce, if applicable (ie the landlord or tenant may have the contract in their personal name). No: <a href="../pages/add_company.html">click here.</a></li>
+    <li>The people <u>Contacts</u> associated with the landlord and the tenant, if known but at minimum the client we are representing, have been entered into Salesforce and are associated with the parent <u>Company</u>. No: <a href="../pages/add_contact.html">click here.</a></li>
+    <li>The applicable broker <u>Contacts</u> have been entered into Salesforce. No: <a href="../pages/add_contact.html">click here.</a></li>
+  </ul>
+
+  <h3>Updating an Open Offer to Pending:</h3>
+
+  <p>Now that the Open offer has become &ldquo;Pending&rdquo;, the <u>In Contract</u> record <strong>must</strong> be updated with the applicable deal terms. The following fields <strong>must</strong> be completed and/or updated <strong>by the agent</strong> once a pending deal occurs:</p>
+
+  <label class="container">Status
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Change the Status from &ldquo;Negotiating&rdquo; to &ldquo;Pending&rdquo;</li>
+  </ul>
+
+  <label class="container">Project Name
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>For Project Name, you <strong>must</strong> follow the <a href="../pages/naming.html">naming guidelines</a></li>
+  </ul>
+
+  <label class="container">Listing
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>If this is our <u>Listing</u>, then the applicable <u>Listing</u> must be associated with this record</li>
+    <li>You may add an &ldquo;External Listing&rdquo; record as another brokerage&rsquo;s listing. This will be something we track in the future.</li>
+  </ul>
+
+  <label class="container">Property
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Ensure the correct <u>Property</u> has been associated with the lease transaction</li>
+  </ul>
+
+  <label class="container">Lease Value
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Enter in the total sum of the lease.</li>
+    <li>To calculate, there is an excel spreadsheet that can be used to calculate:
+      <ul>
+        <li>&gt;3. General Office&gt;Templates &ndash; Office&gt;Deposit Calculator</li>
+      </ul>
+    </li>
+    <li>If unknown, use your best guess</li>
+  </ul>
+
+  <label class="container">Execution Date
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Input the date that the agreement was fully executed by the landlord and tenant</li>
+  </ul>
+
+  <label class="container">Closing Date
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Input the date that the proposed transaction will close or the date the tenant will take possession</li>
+    <li>If unknown, use your best estimate or worst-case scenario</li>
+  </ul>
+
+  <label class="container">Project Contacts
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Input the applicable parties in the transaction, if known, as per the Prerequisites</li>
+  </ul>
+
+  <label class="container">Commission Amount
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Enter in the dollar amount of the Commission being earned on this transaction</li>
+    <li>This can be calculated beside the Lease Value
+      <ul>
+        <li>&gt;3. General Office&gt;Templates &ndash; Office&gt;Deposit Calculator</li>
+      </ul>
+    </li>
+  </ul>
+
+  <p class="save">At this point, click the &ldquo;Save&rdquo; button that will be hovering at the bottom of the page before proceeding.</p>
+
+  <p>The remainder of the record should be completed by the agent to ensure its accuracy. The following explains the various &ldquo;Related Lists&rdquo; associated with the <u>In Contract</u> record.</p>
+
+  <h3>Deposits</h3>
+
+  <label class="container">If the Brokerage is holding deposit monies, the <u>Deposit</u> information <strong>must</strong> be completed
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">Click the &ldquo;New&rdquo; button and complete the following:
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">There are two groupings: "Ledger Information" and "Further Details"
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">Ledger Information. This is primarily used for our Trust and General accounts.
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Type: Choose either debit, credit or external. Debit means money is going into our account, credit means it is leaving our account, external means it is not our account.</li>
+    <li>Account: If Type is not external, choose either Trust or General that the debit or credit is going into</li>
+    <li>Amount: I don't need to explain this</li>
+    <li>Entity: This is the person or company that is supplying the money</li>
+    <li>Form of Payment: Choose the appropriate method for payment</li>
+  </ul>
+
+  <label class="container">Further Details. These fields are for further information about the payment and is used for deposit information going into other brokerages or lawyers trust accounts.
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Deposit Holder: specify who is holding the deposit</li>
+    <li>Due Date: Put the date that the deposit is due. This can be populated at a later date. <strong>This field is used for email alerts</strong> if you want to be notified that a deposit has not been received yet.</li>
+    <li>Date Received/Sent: Choose the date that the amount was sent or received. <strong>This is tied to email alerts</strong> if you want to be notified about when a deposit is received.</li>
+    <li>Clause Number, Cheque Number and Interest Bearing are self explanatory</li>
+  </ul>
+
+  <h3>Conditions</h3>
+
+  <label class="container">These are for the benefit of the <strong>agent</strong>. You will be notified when an upcoming condition is due therefore it is important to enter each condition to stay on top of them.
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">Click the &ldquo;New&rdquo; button and complete the following:
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Milestone Name: this is to describe the applicable condition</li>
+    <li>Clause Number: the clause number to refer to in the Offer to Purchase</li>
+    <li>Kickoff: The date the condition commences. If unknown, use best estimate or leave blank, until known</li>
+    <li>Deadline: The date the condition must be waived or satisfied. If unknown, use best estimate or leave blank, until known</li>
+    <li>Date Removed: Leave Blank</li>
+    <li>Complete Checkbox: Leave unchecked</li>
+    <li>Hit &ldquo;Save&rdquo; or &ldquo;Save &amp; New&rdquo; to add other conditions</li>
+  </ul>
+
+  <h3>Deal Team</h3>
+
+  <label class="container">This allocates the Commission amount specified in the record between the parties listed within this Related List
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">Click the &ldquo;Edit Commissions&rdquo; and complete the following:
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+  <ul>
+    <li>Whoever created the record will default to be 100% recipient of the Commission</li>
+    <li>If the other broker involved is from the Brokerage, click &ldquo;Add Internal Agent&rdquo;, or if the broker involved is from a different brokerage, click &ldquo;Add External Agent&rdquo;</li>
+    <li>In the agent lookup field, start typing the name and click the magnifying glass is the name doesn&rsquo;t pop up </li>
+    <li>Choose the applicable roles of the agents</li>
+    <li>Allocate the commission. This can be done by dollar value or percent of commission (Ie 50/50)</li>
+  </ul>
+
+  <label class="container">Repeat the above steps for each additional agent involved, including referrals
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
+
+  <label class="container">The information here is used to calculate agents output in <u>Closed Deals</u>
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
