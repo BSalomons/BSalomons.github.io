@@ -10,10 +10,12 @@ p , ul , ol {
 
 ul li , ol li {
   padding: 5px;
+  font-size: 22px;
 }
 
 a {
   color: #002F67;
+  font-weight: bold;
 }
 
 a:hover {

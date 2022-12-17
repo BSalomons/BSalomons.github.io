@@ -42,58 +42,85 @@
 
   <p>It is straight forward to create a new <u>Company</u>. While not required, it is best practice to create a <u>Company</u> before you add a <u>Contact</u> to that <u>Company</u>. This is because a <u>Company</u> is a parent record to a <u>Contact</u> and therefore some of the information from the <u>Company</u> will be inherited by the <u>Contact</u> record. If the reverse order is done, then this doesn&rsquo;t happen.</p>
 
-  <ul>
-    <li>Company Name
+  <label class="container">Company Name
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>Use the full name of the company if possible.</li>
         <li>If the company is in multiple locations, add the city name. For example, CBRE Calgary and CBRE Edmonton.</li>
       </ul>
-    </li>
-    <li>Parent Company
+
+    <label class="container">Parent Company
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>Not required but add if you want</li>
       </ul>
-    </li>
-    <li>Type
+  
+    <label class="container">Type
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>Choose the appropriate selection</li>
       </ul>
-    </li>
-    <li>Phone
+
+    <label class="container">Phone
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>General phone line</li>
       </ul>
-    </li>
-    <li>Fax
+
+    <label class="container">Fax
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>If needed</li>
       </ul>
-    </li>
-    <li>Website
+
+    <label class="container">Website
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>Use the full URL as it will be a link on save</li>
       </ul>
-    </li>
-    <li>Sub Type
+
+    <label class="container">Sub Type
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>Dependent field based on the selection from Type above</li>
         <li>Choose all appropriate selections</li>
       </ul>
-    </li>
-    <li>Industry
+
+    <label class="container">Industry
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>Pick the most applicable industry. Other can be used</li>
       </ul>
-    </li>
-    <li>Description
+
+    <label class="container">Description
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>Add anything that may need further explanation</li>
       </ul>
-    </li>
-    <li>Address
+
+    <label class="container">Address
+    <input type="checkbox">
+    <span class="checkmark"></span>
+  </label>
       <ul>
         <li>There is a search bar where you start typing the address and make the appropriate selection. Once selected, Salesforce will populate the street, city, Province, postal code and country</li>
         <li>Double check the postal code, sometimes it gets it wrong</li>
       </ul>
-    </li>
-  </ul>
